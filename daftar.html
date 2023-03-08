@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daftar</title>
+    <link rel="stylesheet" type="text/css" href="daftar.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+          <a class = "tombol1" href="home.html">Home</a>
+          <a class = "tombol2" href="tentang.html">Tentang</a>
+          <a class = "tombol3" href="menu.html">Menu</a>
+          <a class = "tombol4" href="daftar.html">Daftar</a>
+      </ul>
+  </nav>
+    <header>
+      <h1>Formulir Pemesanan Pelanggan</h1>
+    </header>
+
+    <form>
+      <table>
+        <h2>
+          Silahkan isi data diri anda pada form dibawah ini
+        </h2>
+        <tr>
+          <td>
+            <label><b>Nama Lengkap</b></label>
+          </td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+            <td>
+              <label for="Tanggal"><b>Tanggal Lahir</b></label>
+            </td>
+            <td>
+              <input type="date" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Alamat </b></label>
+            </td>
+            <td>
+              <input type="text" ></td>
+          </tr>
+        <tr>
+          <td>
+            <label><b>Email </b></label>
+          </td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+            <td>
+              <label for="Jenis Kelamin"><b>Jenis Kelamin </b></label>
+            </td>
+            <td>
+              <select id="Jenis Kelamin" name="Jenis Kelamin">
+                <option value="cowo">Laki-Laki</option>
+                <option value="cewek">Perempuan</option>
+              </select>
+            </td>
+          </tr>
+        <tr>
+          <td>
+            <label><b>Pesanan </b></label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              id="Nugget"
+              name="pesanan[]"
+              value="Nugget"
+            />
+            <label>Nugget Goreng 10.000</label>
+            <input
+              type="checkbox"
+              id="Kentang"
+              name="pesanan[]"
+              value="Kentang"
+            />
+            <label>Kentang Goreng 10.000</label>
+            <input
+              type="checkbox"
+              id="Sosis"
+              name="pesanan[]"
+              value="Sosis"
+            />
+            <label>Sosis Goreng 12.000</label>
+            <input
+              type="checkbox"
+              id="Roti"
+              name="pesanan[]"
+              value="Roti"
+            />
+            <label>Roti Bakar 10.000</label>
+            <ul>
+            <input
+              type="checkbox"
+              id="kopi"
+              name="pesanan[]"
+              value="kopi"
+            />
+            <label>Kopi Hitam 7.000</label>
+            <input
+              type="checkbox"
+              id="Milo"
+              name="pesanan[]"
+              value="Milo"
+            />
+            <label>Milo Ice/Hot 10.000</label>
+            <input
+              type="checkbox"
+              id="Capucino"
+              name="pesanan[]"
+              value="Capucino"
+            />
+            <label>Capucino Ice/Hot 10.000</label>
+            <input type="checkbox" id="lemon" name="pesanan[]" value="lemon" />
+            <label>Lemontea Ice/Hot 15.000</label>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+            <td>
+              <label><b>Makan Di Tempat / Bawa Pulang </b></label>
+            </td>
+            <td>
+              <input type="radio" id="tempat" name="Makan Di Tempat / Bawa Pulang" value="tempat" />
+              <label>Makan Di Tempat</label>
+              <input type="radio" id="pulang" name="Makan Di Tempat / Bawa Pulang" value="pulang" />
+              <label>Bawa Pulang</label>
+            </td>
+          </tr>
+        <tr>
+          <td>
+            <label for="foto diri"><b>Foto Diri </b></label>
+          </td>
+          <td><input type="file" id="foto diri" name="foto diri"></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="reset"><b>Reset data ?</b></label>
+          </td>
+          <td><input type="Reset" value="ya" /></td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="alert('Terima kasih telah mengisi form!')">Kirim</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+  <footer>
+    <p>Hak Cipta &copy; Panji Mugni Ramadhani</p>
+  </footer>
+</html>
